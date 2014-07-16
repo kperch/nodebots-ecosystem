@@ -1,0 +1,54 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+</head>
+<body>
+  <div class="container-fluid" id="content">
+    <h1>The NodeBots Ecosystem</h1>
+    <ul class="nav nav-pills">
+      <li><a href="index.html">A Brief History of NodeBots</a></li>
+      <li><a href="terminology.html">NodeBots (and general robotics) Terminology</a></li>
+      <li class="active"><a href="categories.html">Categories of NodeBots</a></li>
+      <li><a href="bestiary.html">NodeBots Bestiary</a></li>
+      <li><a href="picker.html">NodeBots Platform Picker</a></li>
+    </ul>
+    <h2>Categories of NodeBots</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>"Wrapper" NodeBots</h2>
+        <p>"Wrapper" NodeBots <em>do not run javascript natively</em>- they expose an API, in one form or another. We can take advantage of these APIs, using Node, to control the platform in question</p>
+        <h4>Some Notable Examples</h4>
+        <ul>
+          <li>Arduino (controlled with Firmata and Johnny-Five)
+            <ul>
+              <li>Many, if not most, forms of Arduino are supported.</li>
+            </ul>
+          </li>
+          <li>NodeCopter (AR Drones controlled with the nodecopter npm module)</li>
+          <li>Sphero (controlled with either the sphero npm module or Cylon.js)</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>"Native" NodeBots</h2>
+        <p>"Native" NodeBots <em>Run javascript natively</em>- they do not require an external node process on another machine.</p>
+        <h4>Some Notable Examples</h4>
+        <ul>
+          <li>Espruino</li>
+          <li>Tessel</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>Itty-Bitty Computers</h2>
+        <p>These are small, usually ARM-based, computers, usually running a Linux flavor. They also include their own GPIO pins. These run Node, just like a laptop or desktop.</p>
+        <h4>Some Notable Examples</h4>
+        <ul>
+          <li>Raspberry Pi</li>
+          <li>BeagleBone Black</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Notable Exceptions</h3>
+    <h4>Hybrids</h4>
+  </div>
+</body>

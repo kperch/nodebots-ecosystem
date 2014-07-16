@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+</head>
+<body>
+  <div class="container-fluid" id="content">
+    <h1>The NodeBots Ecosystem</h1>
+    <ul class="nav nav-pills">
+      <li class="active"><a href="index.html">A Brief History of NodeBots</a></li>
+      <li><a href="terminology.html">NodeBots (and general robotics) Terminology</a></li>
+      <li><a href="categories.html">Categories of NodeBots</a></li>
+      <li><a href="bestiary.html">NodeBots Bestiary</a></li>
+      <li><a href="picker.html">NodeBots Platform Picker</a></li>
+    </ul>
+    <h2 id="history">A Brief History of NodeBots</h2>
+    <p><strong>Author's Note:</strong> This was written at 3AM. I will be making edits as necessary. Please feel free to file any errors or missing data as GitHub issues, and I will see to them as expeditiously as I can.</p>
+    <p>NodeBots history is naturally very brief, but still not a story that's shared relatively often.</p>
+    <h4>The beginning</h4>
+    <p>It all started with a small, but important node module: node-serialport. What this module did was allow node applications to communicate with the serial port on your computer. In most modern computers, this means communicating via the USB port.</p>
+    <p>This module went relaively unnoticed to all but the experienced robotics hobbyist- most of us, including the author, had no idea what the module truly unlocked.</p>
+    <h4>Johnny-Five</h4>
+    <p>This is the part of NodeBots history that most of us remember- the creation of Johnny-Five. What this library did was put a simple-to-use javascript API around the Arduino's Firmata firmware.</p>
+    <p>Suddenly, robotics was accessible to JS programmers everywhere- install this npm module, copy the code from the litany of well-maintained docs hosted in johnny-five's repository, and you were off!</p>
+    <p>As the number of devices working with Arduino began to grow, so did the popularity of JS robotics- the first NodeBots Day in 2013 was a rousing success in many countries, and at JSConf, dozens of attendees happily hacked away on their first Arduino projects (this author included!)</p>
+    <h4>The explosion</h4>
+    <p>Shortly thereafter was the beginning of what I lovingly call 'the cambrian explosion of NdoeBots.'</p>
+    <p>As Arduino became ever-more popular with JS devs thanks to Johnny-Five, more platforms began to show promise with the use of javascript. Parrot Drones and Spheros were some of the first to break from johnny-five- but because they were all Node modules, many used them togther. Gamepads suddenly had modules on npm, and you could control your nodecopter, carrying an arduino, with your XBox controller.</p>
+    <p>Raspberry Pi, BeagleBone Black, and dedicated, ARM-based mini-computers encouraged even further NodeBots exploration: I think a million methophorical lightbulbs switched on when someone discovered you could plug an Arduino into a Raspberry Pi and run johnny-five- severing one of the very few limitations that tethering created.</p>
+    <h4>"Native" NodeBots</h4>
+    <p>Not long after this, platforms that didn't require a wrapper- that ran JS <em>natively</em>- began to surface. Kickstarters for the Espruino and Tessel emerged, and quickly became wildly succesful. These two platforms are now widely available.</p>
+    <h4>Today</h4>
+    <p>Today, a litany of platforms exist that can be controlled with javascript- and this site was established to help make sense of them all.</p>
+  </div>
+</body>
