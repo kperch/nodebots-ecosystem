@@ -15,12 +15,13 @@
   };
 
   window.nodebot_attributes = {
+    //for attributes, assign true if pros are correct, false if cons are correct
     'price-point': {
       pros: [
-        'Low Price Point'
+        'Low Price Point (<= $100)'
       ],
       cons: [
-        'Expensive to get started'
+        'Expensive to get started (> $100)'
       ]
     },
     'beginners': {
@@ -47,12 +48,12 @@
         'Non-comprehensive, or hard-to-find, documentation'
       ]
     },
-    'tethering': {
+    'wireless': {
       pros: [
-        'Does not require tethering'
+        'Does not require a computer to be connected to the device'
       ],
       cons: [
-        'Must remain connected to a computer running Node.JS or some other program'
+        'Must remain connected to a computer running Node.JS or some other program- either through a USB cable or Wifi/Bluetooth'
       ]
     },
     'wifi': {
@@ -60,7 +61,7 @@
         'Has WiFi access out-of-the-box'
       ],
       cons: {
-        'Requires extra accesories, or cannot access, WiFi.'
+        'Requires extra accesories, or cannot easily access, WiFi.'
       }
     }
   }
@@ -84,12 +85,13 @@
         'johnny-five',
         'cylon-js'
       ],
+      cost: 'varies on the board. Uno, the most common board, goes for around $40',
       attributes: {
         'price-point': true,
         'beginners': true,
         'community': true,
         'documentation': true,
-        'tethering': false,
+        'wireless': false,
         'wifi': false
       }
     },
@@ -102,6 +104,7 @@
         }
       ],
       creator: 'Orbotix',
+      cost: 'v1 is $79.99, v2 is $129.99'
       description: 'A small-ish sphere with gyroscope and RGB LED technology, this sphere can roll across surfaces, light up different colors, or used as an input device for gyroscopic readings',
       libraries: [
         'sphero',
@@ -112,9 +115,36 @@
         'beginners': true,
         'community': true,
         'documentation': true,
-        'tethering': false,
+        'wireless': false,
         'wifi': false
       }
-    }
+    },
+    'espruino':{
+      category: 'Native',
+      purchase_point:[
+        {
+          name: 'Adafruit',
+          url: 'https://www.adafruit.com/products/1887'
+        },
+        {
+          name: 'List of Distributors',
+          url: 'http://www.espruino.com/Order'
+        }
+      ],
+      cost: '$40',
+      creator: 'Pur3 LTD',
+      description: 'A small microcontroller, esprino runs a modified javascript interpretor, and runs JS right on the board. With a lipoly battery connector and its small size, it\'s great for wearables and wireless tech.',
+      libraries: [
+      ],
+      attributes: {
+        'price-point': true,
+        'beginners': false,
+        'community': true,
+        'documentation': true,
+        'wireless': true,
+        'wifi':false
+      }
+    },
+
   }
 });
