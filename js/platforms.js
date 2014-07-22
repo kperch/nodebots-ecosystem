@@ -11,6 +11,14 @@
     'sphero': {
       name: 'node-sphero',
       url: 'https://www.npmjs.org/package/node-sphero'
+    },
+    'raspi-io': {
+      name: 'Raspi IO',
+      url: 'https://gitlab.theoreticalideations.com/nebrius/raspi-io'
+    },
+    'raspi-llio': {
+      name: 'Raspi LLIO',
+      url: 'https://gitlab.theoreticalideations.com/nebrius/raspi-llio'
     }
   };
 
@@ -42,7 +50,7 @@
     },
     'documentation': {
       pros: [
-        'Easy-to-find, thourough documentation'
+        'Easy-to-find, thorough documentation'
       ],
       cons: [
         'Non-comprehensive, or hard-to-find, documentation'
@@ -150,6 +158,51 @@
         'wireless': true,
         'wifi':false
       }
+    },
+    'raspberry-pi': {
+      name: 'Raspberry Pi',
+      category: 'Computer',
+      purchase_point: [
+        {
+          name: 'Element 14',
+          url: 'http://www.element14.com/community/community/raspberry-pi'
+        }
+      ],
+      creator: 'Raspberry Pi Foundation',
+      description: 'A credit-card sized, ARM based computer that can run Linux with X11 and Node.js. Notable for including USB ports and an HDMI port, the RPi is great when you want to drive a display and other "computer class" peripherals.',
+      libraries: [
+        'johnny-five',
+        'raspi-io',
+        'raspi-llio'
+      ],
+      cost: '$35 normally, can rise to $50 when supply is constrained',
+      attributes: {
+        'price-point': true,
+        'beginners': false,
+        'community': true,
+        'documentation': false,
+        'wireless': true,
+        'wifi': false
+      },
+      docs_sites: [
+        {
+          name: 'Official Help Page',
+          url: 'http://www.raspberrypi.org/help/'
+        },
+        {
+          name: 'Adafruit Raspberry Pi Tutorials',
+          url: 'https://learn.adafruit.com/category/raspberry-pi'
+        },
+        {
+          name: 'Installing Node.js and NPM',
+          url: 'http://oskarhane.com/raspberry-pi-install-node-js-and-npm/'
+        },
+        {
+          name: 'RPi Low-Level Peripherals and Pinouts',
+          url: 'http://elinux.org/Rpi_Low-level_peripherals'
+        }
+      ],
+      website: 'http://www.raspberrypi.org/'
     }
   };
 }());
