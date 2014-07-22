@@ -1,5 +1,5 @@
 (function(){
-  window.libraries = {
+  libraries = {
     'johnny-five': {
       name: 'Johnny-Five',
       url: 'http://github.com/rwaldron/johnny-five'
@@ -14,7 +14,7 @@
     }
   };
 
-  window.nodebot_attributes = {
+  nodebot_attributes = {
     //for attributes, assign true if pros are correct, false if cons are correct
     'price-point': {
       pros: [
@@ -60,13 +60,13 @@
       pros: [
         'Has WiFi access out-of-the-box'
       ],
-      cons: {
+      cons: [
         'Requires extra accesories, or cannot easily access, WiFi.'
-      }
+      ]
     }
-  }
+  };
 
-  window.platforms = {
+  platforms = {
     'arduino': {
       category: 'Wrapped',
       purchase_point: [
@@ -104,7 +104,7 @@
         }
       ],
       creator: 'Orbotix',
-      cost: 'v1 is $79.99, v2 is $129.99'
+      cost: 'v1 is $79.99, v2 is $129.99',
       description: 'A small-ish sphere with gyroscope and RGB LED technology, this sphere can roll across surfaces, light up different colors, or used as an input device for gyroscopic readings',
       libraries: [
         'sphero',
@@ -144,7 +144,6 @@
         'wireless': true,
         'wifi':false
       }
-    },
-
-  }
-});
+    }
+  };
+}());
