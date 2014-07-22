@@ -68,6 +68,7 @@
 
   platforms = {
     'arduino': {
+      name: 'Arduino',
       category: 'Wrapped',
       purchase_point: [
         {
@@ -96,6 +97,7 @@
       }
     },
     'sphero': {
+      name: 'Sphero',
       category: 'Wrapped',
       purchase_point: [
         {
@@ -120,6 +122,7 @@
       }
     },
     'espruino':{
+      name: 'Espruino',
       category: 'Native',
       purchase_point:[
         {

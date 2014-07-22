@@ -1,6 +1,7 @@
 {
   //COPY START HERE
   'platform-name': {
+    name: '',
     category: '', //'Wrapped', 'Native', 'Computer', or 'Hybrid'
     purchase_point: [
       {
