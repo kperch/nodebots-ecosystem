@@ -1,7 +1,7 @@
 {
   //COPY START HERE
   'platform-name': {
-    category: '', //'Wrapped', 'Native', or 'Computer'
+    category: '', //'Wrapped', 'Native', 'Computer', or 'Hybrid'
     purchase_point: [
       {
         name: 'store-website-name', //name of the online store ('sphero website', 'Adafruit')
