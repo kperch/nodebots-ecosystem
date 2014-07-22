@@ -150,6 +150,57 @@
         'wireless': true,
         'wifi':false
       }
+    },
+    'tessel': {
+      name: 'Tessel',
+      category: 'Native', //'Wrapped', 'Native', 'Computer', or 'Hybrid'
+      purchase_point: [
+        {
+          name: 'Celery', //name of the online store ('sphero website', 'Adafruit')
+          url: 'https://www.trycelery.com/shop/TEC' //link to the most granular store page you can find for this product
+        }
+      ],
+      creator: 'Technical Machine. ', //Who built this? You can leave it blank.
+      description: 'Tessel is a microcontroller that runs JavaScript. It\'s Node-compatible and ships with Wifi built in.', //A couple of sentences. What makes this platform unique?
+      libraries: [
+        'cylon-js' //see platforms.js - window.libraries (add if needed)
+      ],
+      cost: '$99 for the Tessel board; ~$25 for separate modules each', //be descriptive, doesn't need to be a number
+      attributes: {
+        'price-point': true, //see platforms.js - window.attributes
+        'beginners': true,
+        'community': true,
+        'documentation': true,
+        'wireless': true,
+        'wifi': true
+      },
+      docs_sites: [ //add pages with docs here (even third-party blog posts)
+        {
+          name: 'First Run Experience',
+          url: 'http://start.tessel.io/install'
+        },
+        {
+          name: 'Forums',
+          url: 'https://forums.tessel.io/'
+        },
+        {
+          name: 'Documentation',
+          url: 'https://tessel.io/docs/home'
+        },
+        {
+          name: 'Github docs',
+          url: 'https://github.com/tessel/docs'
+        },
+        {
+          name: 'Arduino <-> Tessel communication',
+          url: 'https://github.com/tessel/docs/blob/master/tutorials/connect-arduino-tessel.md'
+        },
+        {
+          name: 'Cylon.js Tessel docs',
+          url: 'http://cylonjs.com/documentation/platforms/tessel/'
+        },
+      ],
+      website: 'https://tessel.io/' //general info website
     }
   };
 }());
