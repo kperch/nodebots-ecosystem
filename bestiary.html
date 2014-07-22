@@ -44,9 +44,51 @@
       </li>
     </ul>
   </div>
+  <div id="entries"></div>
 
+  <!-- TEMPLATES -->
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="entry">
+      <h3 class="name">{{name}}</h3>
+      <p><strong>Creator:</strong> {{creator}}</p>
+      <p><a href="{{website}}">Website</a></p>
+      <p>{{description}}</p>
+      <h4>Pros:</h4>
+      <ul>
+        {{#each pros}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <h4>Cons:</h4>
+      <ul>
+        {{#each cons}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p><strong>Cost:</strong> {{cost}}</p>
+      <h4>Where to Buy:</h4>
+      <ul>
+        {{#each purchase_point}}
+          <li><a href="{{url}}">{{name}}</a></li>
+        {{/each}}
+      </ul>
+      <h4>Docs Sites:</h4>
+      <ul>
+        {{#each docs_sites}}
+          <li><a href="{{url}}">{{name}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </script>
+
+  <script id="category-template" type="text/x-handlebars-template">
+    <h2 id="#{{Type}}">{{Type}} NodeBots</h2>
+    <div id="{{Type}}-nodebots-list"></div>
+  </script>
+  <!-- END TEMPLATES -->
   <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.4/handlebars.min.js"></script>
   <script src="js/platforms.js"></script>
   <script src="js/bestiary.js"></script>
 
