@@ -6,7 +6,7 @@
     },
     'cylon-js': {
       name: 'CylonJS',
-      url: ''
+      url: 'http://http://cylonjs.com/'
     },
     'sphero': {
       name: 'node-sphero',

@@ -24,6 +24,12 @@ $(function(){
         }
       });
 
+      platform.library_sites = [];
+
+      _.forEach(platform.libraries, function(library){
+        platform.library_sites.push(window.libraries[library]);
+      });
+
       platform.pros = _.flatten(platform.pros);
       platform.cons = _.flatten(platform.cons);
 
