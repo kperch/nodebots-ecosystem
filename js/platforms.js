@@ -70,6 +70,7 @@
     'arduino': {
       name: 'Arduino',
       category: 'Wrapped',
+      website: 'http://arduino.cc',
       purchase_point: [
         {
           name: 'SparkFun Inventor\'s Kit',
@@ -99,6 +100,7 @@
     'sphero': {
       name: 'Sphero',
       category: 'Wrapped',
+      website: 'http://gosphero.com',
       purchase_point: [
         {
           name: 'Sphero Shop',
@@ -124,6 +126,7 @@
     'espruino':{
       name: 'Espruino',
       category: 'Native',
+      website: 'http://espruino.com',
       purchase_point:[
         {
           name: 'Adafruit',
