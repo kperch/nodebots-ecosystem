@@ -21,7 +21,14 @@
       'documentation': true,
       'wireless': false,
       'wifi': false
-    }
+    },
+    docs_sites: [ //add pages with docs here (even third-party blog posts)
+      {
+        name: 'docs-pages',
+        url: ''
+      }
+    ],
+    website: '' //general info website
   }
   //COPY END HERE
 }
