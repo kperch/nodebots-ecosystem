@@ -150,6 +150,42 @@
         'wireless': true,
         'wifi':false
       }
+    },
+    'pinoccio': {
+      name: 'Pinoccio',
+      category: 'Wrapped', 
+      purchase_point: [
+        {
+          name: 'Pinoccio Store', 
+          url: 'https://pinocc.io/shop/detail/1007/-/starter-kit?nb=1' 
+        }
+      ],
+      creator: 'The Pinoccio Team', 
+      description: 'Spin up mesh networks with ease. Program wirelessly or with the Arduino IDE. Stream events through the free API. Batteries included. Sleep and live forever.', 
+      libraries: [
+        'johnny-five',
+        'cylon-js'
+      ],
+      cost: '$197. Includes 2 mesh networked boards, batteries/charge controller, and a wifi module. Can get started for $59 with only one board and no wifi.', 
+      attributes: {
+        'price-point': false,
+        'beginners': true,
+        'community': true,
+        'documentation': true,
+        'wireless': false,
+        'wifi': true
+      },
+      docs_sites: [
+        {
+          name: 'docs-pages',
+          url: 'https://docs.pinocc.io/'
+        },
+        {
+          name:"pinoccio-io",
+          url:"https://npmjs.org/package/pinoccio-io"
+        }
+      ],
+      website: 'https://pinocc.io/' //general info website
     }
   };
 }());
